@@ -203,6 +203,8 @@
             <artifactId>wildfly-jar-maven-plugin</artifactId>
             <configuration>
               <feature-pack-location>wildfly@maven(org.jboss.universe:community-universe)#${version.org.wildfly}</feature-pack-location>
+              <!-- Line above is translated to <feature-pack-location>org.wildfly:wildfly-ee-galleon-pack:23.0.2.Final</feature-pack-location>-->
+              <!-- To use the productized EAP XP it could be replaced by <feature-pack-location>org.jboss.eap:wildfly-galleon-pack:3.0.0.GA-redhat-00006</feature-pack-location>-->
               <layers>
                 <layer>logging</layer>
                 <layer>undertow</layer>
